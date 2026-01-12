@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let number = prompt(" Whats your age ")
+        if (number < 18) {
+            document.write("Go and Drink milk" + ("<br>"));
+        }
+
+        else {
+            document.write("Go and vote" + ("<br>"));
+        }
+
+        let compare = Number(prompt(" enter number here to check positive or nagative "));
+        if (compare < 0) {
+            document.write("number is nagative" + ("<br>"));
+        }
+        else {
+            document.write("number is positive" + ("<br>"));
+        }
+        let check = Number(prompt(" enter number here to check odd or even"));
+        if (check % 2 == 0) {
+            document.write("number is EVEN" + ("<br>"))
+
+        }
+        else {
+            document.write("number is ODD" + ("<br>"));
+        }
+        let num1 = Number(prompt("Enter first number"));
+        let num2 = Number(prompt("Enter second number"));
+
+        if (num1 * num2 > 100) {
+            document.write("Multiplication is greater than 100" + ("<br>"));
+        } else {
+            document.write("Multiplication is less than or equal to 100" + ("<br>"));
+        }
+        let marks = Number(prompt("enter numbers to check them out to pass and fail"))
+        if (marks < 37) {
+            document.write("go and Study properly" + ("<br>"))
+        }
+        else {
+            document.write("you are the real cracker <br> passed" + ("<br>"))
+        }
+        let f = Number(prompt("enter number to check ot is divisible bt 5 or not"));
+        if (f % 5 == 0) {
+            document.write("Divisible by 5 <br>")
+        }
+        else {
+            document.write("not divisible by 5 <br>")
+        }
+        
+        let username = prompt("Create your user name")
+        let password = prompt("create Strong password")
+        let login = prompt("Insert your user name")
+        let loginpass = prompt("insert your password");
+        if (username == login && password == loginpass) {
+            document.write("Login sucessfull" +  "<br> ".username + ("<br>"));
+        }
+
+        else {
+            document.write("login failed your username and password must be wrong!" + ("<br>"))
+        }
+        
+
+
+
+    </script>
+</body>
+<script>
+
+
+
+
+</script>
+
+</html>
