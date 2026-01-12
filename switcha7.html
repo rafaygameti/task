@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let choice = Number(prompt(
+`ATM Menu:
+1. Balance Check
+2. Deposit
+3. Withdraw
+4. Exit
+Enter your choice (1-4):`
+));
+
+let balance = 5000;
+let amount;
+
+switch (choice) {
+    case 1:
+        document.write("Your balance is: " + balance);
+        break;
+
+    case 2:
+        amount = Number(prompt("Enter deposit amount"));
+        balance += amount;
+        document.write("Amount deposited. New balance: " + balance);
+        break;
+
+    case 3:
+        amount = Number(prompt("Enter withdraw amount"));
+        if (amount > balance) {
+            document.write("Insufficient balance");
+        } else {
+            balance -= amount;
+            document.write("Please collect your cash");
+            document.write("Remaining balance: " + balance);
+        }
+        break;
+
+    case 4:
+        document.write("Thank you for using ATM");
+        break;
+
+    default:
+        document.write("Invalid option");
+}
+
+    </script>
+</body>
+</html>
