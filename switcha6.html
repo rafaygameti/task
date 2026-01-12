@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let choice = prompt(
+`Menu:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+Enter your choice (1-4):`
+);
+
+choice = Number(choice);
+
+let num1, num2;
+
+switch (choice) {
+    case 1:
+        num1 = Number(prompt("Enter first number"));
+        num2 = Number(prompt("Enter second number"));
+        document.write("Addition = " + (num1 + num2));
+        break;
+
+    case 2:
+        num1 = Number(prompt("Enter first number"));
+        num2 = Number(prompt("Enter second number"));
+        document.write("Subtraction = " + (num1 - num2));
+        break;
+
+    case 3:
+        num1 = Number(prompt("Enter first number"));
+        num2 = Number(prompt("Enter second number"));
+        document.write("Multiplication = " + (num1 * num2));
+        break;
+
+    case 4:
+        num1 = Number(prompt("Enter first number"));
+        num2 = Number(prompt("Enter second number"));
+        if (num2 === 0) {
+            document.write("Cannot divide by zero");
+        } else {
+            document.write("Division = " + (num1 / num2));
+        }
+        break;
+
+    default:
+        document.write("Invalid choice");
+}
+
+    </script>
+</body>
+</html>
